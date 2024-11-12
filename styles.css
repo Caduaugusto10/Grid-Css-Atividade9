@@ -15,7 +15,7 @@
 
 body {
     background-color: rgb(0, 0, 0);
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: Poppins, sans-serif;
 }
 
 .header {
@@ -25,6 +25,9 @@ body {
     text-align: center;
     padding: 20px;
     height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .nav {
@@ -34,6 +37,9 @@ body {
     padding: 20px;
     text-align: center;
     height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .section {
@@ -42,7 +48,9 @@ body {
     color: rgb(0, 0, 0);
     padding: 20px;
     height: 20rem;
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .article {
@@ -51,7 +59,10 @@ body {
     color: black;
     padding: 20px;
     height: 20rem;
+    display: flex;
+    align-items: center;
     text-align: center;
+    justify-content: center;
 }
 
 .aside {
@@ -61,6 +72,9 @@ body {
     padding: 20px;
     width: 20rem;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .footer {
@@ -70,4 +84,21 @@ body {
     text-align: center;
     padding: 20px;
     height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 1fr auto;
+        grid-template-areas:
+            "header"
+            "nav"
+            "section"
+            "article"
+            "aside"
+            "footer";
+    }
 }
